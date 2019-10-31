@@ -309,6 +309,7 @@ const requestMock = jest.fn().mockImplementation((uri, params) => {
     })
 })
 
+requestMock.put = jest.fn()
 requestMock.retryCnt = 0
 requestMock.setMockResponse = (value) => {
     manualMockResponse = value
